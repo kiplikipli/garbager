@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 974746a43ca585b4fb8ca6641bc9a582
+  - enabled: 1
+    path: Assets/Scenes/Countdown.unity
+    guid: 03cb437b50d3bed4e8722c0f747e81cc
+  - enabled: 1
+    path: Assets/Scenes/Easy.unity
+    guid: fc8436980434ffc4a87cf14837391052
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 212ca26ecf5888f4c9828aefa7db8094
+  - enabled: 0
+    path: Assets/Scenes/Timer.unity
+    guid: 25ad8756c06762b4cb912868f1033a4b
   m_configObjects: {}
