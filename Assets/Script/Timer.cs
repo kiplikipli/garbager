@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    float currentTime = 0f;
+    public float currentTime = 0f;
     float startingTime = 30f;
     [SerializeField] Text timerText;
 
@@ -18,6 +18,6 @@ public class Timer : MonoBehaviour
     void Update()
     {
         currentTime -= 1 * Time.deltaTime;
-        timerText.text = currentTime.ToString("0.00");
+        timerText.text = currentTime.ToString("0");
     }
 }
