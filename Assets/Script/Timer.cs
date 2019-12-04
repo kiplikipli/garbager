@@ -18,6 +18,14 @@ public class Timer : MonoBehaviour
     void Update()
     {
         currentTime -= 1 * Time.deltaTime;
-        timerText.text = currentTime.ToString("0");
+        if(currentTime <= 0)
+        {
+            DontDestroyOnLoad(GameObject.Find("Score"));
+            SceneManager.LoadScene("GameOver");
+        }
+        else
+        {
+            timerText.text = currentTime.ToString("0");
+        }
     }
 }

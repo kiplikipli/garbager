@@ -5,14 +5,20 @@ using UnityEngine.UI;
 
 public class Scoring : MonoBehaviour
 {
+    public GameObject timer;
     public Text scoreText;
     public float score = 0;
     float tempScore = 1;
 
+    void Start()
+    {
+            
+    }
+
     public void incScore()
     {
-        score += tempScore;
-        tempScore++;
+        Timer timerScript = timer.GetComponent<Timer>();
+        score += tempScore*timerScript.currentTime;
     }
 
     public void displayScore()

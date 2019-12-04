@@ -5,24 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class AddForce : MonoBehaviour
 {
-    public List<Transform> spawnPos;
-    public List<GameObject> trashes;
+    public GameObject thrower;
+    //public Transform[] spawnPos = new Transform[4];
+    //public GameObject[] trashes = new GameObject[4];
     const float plasticPower = 1000, elecPower = 800, power=1000;
     Rigidbody rb;
     int randomint;
     enum Bin { Organic, Plastic, Glass, Electronics };
-
     void Start()
     {
-        if (Input.GetKeyDown("d"))
-        {
-            rb = GetComponent<Rigidbody>();
-            rb.AddForce(Vector3.forward * plasticPower);
-            rb.AddForce(Vector3.up * plasticPower);
-            rb.AddForce(Vector3.right * 100);
-            
-        }
-        else if (Input.GetKeyDown("a"))
+        
+        /*else if (Input.GetKeyDown("a"))
         {
             rb = GetComponent<Rigidbody>();
             rb.AddForce(Vector3.forward * elecPower);
@@ -42,15 +35,41 @@ public class AddForce : MonoBehaviour
             rb.AddForce(Vector3.forward * power);
             rb.AddForce(Vector3.up * power);
             rb.AddForce(Vector3.right * 100);
-        }
+        }*/
     }
 
     void Update()
     {
-        if (Input.GetKeyDown("d") || Input.GetKeyDown("f") || Input.GetKeyDown("s") || Input.GetKeyDown("a"))
+        /*if (Input.GetKeyDown("d"))
         {
             randomint = Random.Range(0, 4);
             Instantiate(trashes[randomint], spawnPos[randomint].position, spawnPos[randomint].rotation);
+            isSpawn = false;
+        }*/
+        if (Input.GetKeyDown("o"))
+        {
+            ThrowObject(1000f,500f,Vector3.right, 100f);
         }
+        else if (Input.GetKeyDown("q"))
+        {
+            ThrowObject(1000f, 1000f, Vector3.left, 200f);
+        }
+        else if (Input.GetKeyDown("w"))
+        {
+            ThrowObject(1000f, 1000f, Vector3.left, 100f);
+        }
+        else if (Input.GetKeyDown("p"))
+        {
+            ThrowObject(1000f, 800f, Vector3.right, 320f);
+        }
+    }
+
+    void ThrowObject(float forwardPower, float upPower, Vector3 direction, float dirPower )
+    {
+        SpawnTrash throwerScript = thrower.GetComponent<SpawnTrash>();
+        rb = throwerScript.objek.GetComponent<Rigidbody>();
+        rb.AddForce(Vector3.forward * forwardPower,ForceMode.Force);
+        rb.AddForce(Vector3.up * upPower);
+        rb.AddForce(direction * dirPower);
     }
 }
