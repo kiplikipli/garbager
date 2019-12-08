@@ -28,13 +28,16 @@ tempat sampahnya, poin akan dikurangi sebanyak 10 dan combo akan direset menjadi
 
 # **Goal**
 
-```text
-Tujuan dari game ini adalah meraih poin sebesar-besarnya dalam waktu yang telah diberikan ( 30 detik)
-```
+
+    Tujuan dari game ini adalah meraih poin sebesar-besarnya dalam waktu yang telah diberikan ( 30 detik)
+
 
 # **Gameplay Screenshots**
 
-
+<img src="./Screenshots/MainMenu.png" width="600" style="margin-left:35px;margin-bottom:20px;margin-top:20px"/>
+<img src="./Screenshots/Countdown.png" width="600" style="margin-left:35px;margin-bottom:20px;margin-top:20px"/>
+<img src="./Screenshots/GamePlay.png" width="600" style="margin-left:35px;margin-bottom:20px;margin-top:20px"/>
+<img src="./Screenshots/GameOver.png" width="600" style="margin-left:35px;margin-bottom:20px;margin-top:20px"/>
 
 # **Tech-Stack**
 
