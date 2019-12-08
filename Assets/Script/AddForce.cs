@@ -46,19 +46,19 @@ public class AddForce : MonoBehaviour
             Instantiate(trashes[randomint], spawnPos[randomint].position, spawnPos[randomint].rotation);
             isSpawn = false;
         }*/
-        if (Input.GetKeyDown("o"))
+        if (Input.GetKeyDown("o")) // plastic
         {
             ThrowObject(1000f,500f,Vector3.right, 100f);
         }
-        else if (Input.GetKeyDown("q"))
+        else if (Input.GetKeyDown("q")) // organic
         {
-            ThrowObject(1000f, 1000f, Vector3.left, 200f);
+            ThrowObject(1000f, 800f, Vector3.left, 200f);
         }
-        else if (Input.GetKeyDown("w"))
+        else if (Input.GetKeyDown("w")) // electronic
         {
-            ThrowObject(1000f, 1000f, Vector3.left, 100f);
+            ThrowObject(900f, 600f, Vector3.left, 100f);
         }
-        else if (Input.GetKeyDown("p"))
+        else if (Input.GetKeyDown("p")) // glass
         {
             ThrowObject(1000f, 800f, Vector3.right, 320f);
         }

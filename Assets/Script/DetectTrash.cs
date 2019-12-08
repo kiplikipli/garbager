@@ -20,6 +20,8 @@ public class DetectTrash : MonoBehaviour
         {
             Destroy(col.gameObject);
             scoreScript.resetTemp();
+            scoreScript.decScore();
+            scoreScript.displayScore();
         }
     }
 }
