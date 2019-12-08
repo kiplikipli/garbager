@@ -20,7 +20,10 @@ Tombol yang bisa ditekan ada 4 sesuai dengan banyaknya jenis sampah yaitu :
 3.  "O" untuk membuang ke arah tempat sampah berwarna Merah
 4.  "P" untuk membuang ke arah tempat sampah berwarna Kuning
 
-Jika sampah yang dilempar sesuai dengan tempat sampahnya, maka poin akan bertambah sebesar sisa waktu saat ini dan akan dikalikan sesuai combo yang akan terus bertambah jika terus menerus membuang sampah sesuai tempatnya, tapi jika sampah yang dilempar tidak sesuai dengan tempat sampahnya, poin akan dikurangi sebanyak 10 dan combo akan direset menjadi 0 kembali.
+Jika sampah yang dilempar sesuai dengan tempat sampahnya, maka poin akan bertambah sebesar
+sisa waktu saat ini dan akan dikalikan sesuai combo yang akan terus bertambah jika terus
+menerus membuang sampah sesuai tempatnya, tapi jika sampah yang dilempar tidak sesuai dengan
+tempat sampahnya, poin akan dikurangi sebanyak 10 dan combo akan direset menjadi 0 kembali.
 ```
 
 # **Goal**
