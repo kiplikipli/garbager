@@ -8,13 +8,13 @@ public class AddForce : MonoBehaviour
     public GameObject thrower;
     //public Transform[] spawnPos = new Transform[4];
     //public GameObject[] trashes = new GameObject[4];
-    const float plasticPower = 1000, elecPower = 800, power=1000;
+    const float plasticPower = 1000, elecPower = 800, power = 1000;
     Rigidbody rb;
     int randomint;
     enum Bin { Organic, Plastic, Glass, Electronics };
     void Start()
     {
-        
+
         /*else if (Input.GetKeyDown("a"))
         {
             rb = GetComponent<Rigidbody>();
@@ -48,15 +48,15 @@ public class AddForce : MonoBehaviour
         }*/
         if (Input.GetKeyDown("o")) // plastic
         {
-            ThrowObject(1000f,500f,Vector3.right, 100f);
+            ThrowObject(1000f, 500f, Vector3.right, 100f);
         }
         else if (Input.GetKeyDown("q")) // organic
         {
-            ThrowObject(1000f, 800f, Vector3.left, 200f);
+            ThrowObject(400f, 600f, Vector3.left, 100f);
         }
         else if (Input.GetKeyDown("w")) // electronic
         {
-            ThrowObject(900f, 600f, Vector3.left, 100f);
+            ThrowObject(1000f, 600f, Vector3.left, 60f);
         }
         else if (Input.GetKeyDown("p")) // glass
         {
@@ -64,11 +64,11 @@ public class AddForce : MonoBehaviour
         }
     }
 
-    void ThrowObject(float forwardPower, float upPower, Vector3 direction, float dirPower )
+    void ThrowObject(float forwardPower, float upPower, Vector3 direction, float dirPower)
     {
         SpawnTrash throwerScript = thrower.GetComponent<SpawnTrash>();
         rb = throwerScript.objek.GetComponent<Rigidbody>();
-        rb.AddForce(Vector3.forward * forwardPower,ForceMode.Force);
+        rb.AddForce(Vector3.forward * forwardPower, ForceMode.Force);
         rb.AddForce(Vector3.up * upPower);
         rb.AddForce(direction * dirPower);
     }

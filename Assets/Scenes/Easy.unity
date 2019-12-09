@@ -763,7 +763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 1151029749}
-  trash: {fileID: 1191933010613832, guid: 42db2464346d91c47b812288879592f1, type: 3}
+  trash: {fileID: 1123693314251274, guid: b741fa043c0908c499bb320804aa111b, type: 3}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,9 +873,9 @@ MonoBehaviour:
   - {fileID: 1590371773}
   - {fileID: 1583750173}
   trashes:
-  - {fileID: 8166164834287328823, guid: 06303a70f9cbc8f4f80effce50315360, type: 3}
+  - {fileID: 1216505430168376, guid: 57e3542e6c16dfd40972c0b1b0899afb, type: 3}
   - {fileID: 159330, guid: 18c7f6b8eb5793f49a8f6d81d2e01b43, type: 3}
-  - {fileID: 1191933010613832, guid: 42db2464346d91c47b812288879592f1, type: 3}
+  - {fileID: 1123693314251274, guid: b741fa043c0908c499bb320804aa111b, type: 3}
   - {fileID: 261294171808576385, guid: 017bcfb60093c0448b6d7c67d37aead3, type: 3}
   randomint: 0
 --- !u!1 &535379084
@@ -1000,13 +1000,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856409312}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.26, y: -3.71, z: -18.532288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &995237613 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1643330841758854, guid: bd0eff807f4d2414ab484a4dbf781ad1,
@@ -1342,6 +1342,8 @@ MonoBehaviour:
   scoreText: {fileID: 1269327801}
   comboText: {fileID: 1614924819}
   score: 0
+  tempScore: 0
+  maxcombo: 0
 --- !u!4 &1151029751
 Transform:
   m_ObjectHideFlags: 0
@@ -2305,7 +2307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 1151029749}
-  trash: {fileID: 8166164834287328823, guid: 06303a70f9cbc8f4f80effce50315360, type: 3}
+  trash: {fileID: 1216505430168376, guid: 57e3542e6c16dfd40972c0b1b0899afb, type: 3}
 --- !u!1 &2020342614
 GameObject:
   m_ObjectHideFlags: 0
